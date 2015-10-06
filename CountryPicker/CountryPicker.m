@@ -240,7 +240,8 @@
 
     ((UILabel *)[view viewWithTag:1]).text = [[self class] countryNames][(NSUInteger)row];
     NSString *imagePath = [NSString stringWithFormat:@"CountryPicker.bundle/%@", [[self class] countryCodes][(NSUInteger) row]];
-    ((UIImageView *)[view viewWithTag:2]).image = [UIImage imageNamed:imagePath];
+    NSString *path = [[NSBundle bundleForClass:[CountryPicker class]] pathForResource:imagePath ofType:@"png"];
+    ((UIImageView *)[view viewWithTag:2]).image = [UIImage imageWithContentsOfFile:path];
 
 
     return view;
