@@ -8,7 +8,7 @@
     "Nick Lockwood": "http://charcoaldesign.co.uk/"
   },
   "source": {
-    "git": "https://github.com/nicklockwood/CountryPicker.git",
+    "git": "https://github.com/arietis/CountryPicker.git",
     "tag": "1.2.3"
   },
   "platforms": {
