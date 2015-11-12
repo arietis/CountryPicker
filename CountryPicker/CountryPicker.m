@@ -96,6 +96,13 @@
  
             namesByCode[code] = countryName ?: code;
         }
+        namesByCode[@"AQ"] = nil;
+        namesByCode[@"BV"] = nil;
+        namesByCode[@"GS"] = nil;
+        namesByCode[@"HM"] = nil;
+        namesByCode[@"PN"] = nil;
+        namesByCode[@"TF"] = nil;
+        namesByCode[@"UM"] = nil;
         _countryNamesByCode = [namesByCode copy];
     }
     return _countryNamesByCode;
